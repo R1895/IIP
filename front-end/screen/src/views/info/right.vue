@@ -1,0 +1,155 @@
+<template>
+  <div id="right">
+    <div class="bg-color-black">
+      <div class=" top-box">
+        <div class="right-title">{{ this.title }}</div>
+        <el-select v-model="value" placeholder="当天" @change="handleSelectChange">
+          <el-option
+              v-for="item in options"
+              :key="item.value"
+              :label="item.label"
+              :value="item.value">
+          </el-option>
+        </el-select>
+      </div>
+      <div class="show-box">
+        <div class="show-item">
+          <div class="show-item-title">最小气味强度值</div>
+          <div class="show-item-min-content">
+            <countTo class="num" :startVal='old_min_smell' :endVal='min_smell'
+                     :duration='5000'></countTo>
+          </div>
+        </div>
+        <div class="show-item">
+          <div class="show-item-title">最大气味强度值</div>
+          <div class="show-item-max-content">
+            <countTo class="num" :startVal='old_max_smell' :endVal='max_smell'
+                     :duration='5000'></countTo>
+          </div>
+        </div>
+      </div>
+      <div>
+        <LeftChart :smell="smell"/>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import {defineComponent} from 'vue'
+import LeftChart from '_c/echart/info/right/rightChart'
+
+export default defineComponent({
+  name: "right",
+  data() {
+    return {
+      title: "气味强度统计图",
+      options: [{
+        value: '1',
+        label: '当天'
+      }, {
+        value: '7',
+        label: '近七天'
+      }, {
+        value: '30',
+        label: '近一月'
+      }],
+      value: '1',
+      min_smell: 0,
+      max_smell: 0,
+      old_min_smell: 0,
+      old_max_smell: 0,
+    }
+  },
+  props: {
+    smell: {
+      type: Object,
+      required: true,
+    },
+  },
+  watch: {
+    smell: {
+      handler: function (newVal) {
+        this.old_max_smell = this.max_smell
+        this.old_min_smell = this.min_smell
+        // console.log(newVal)
+        this.min_smell = newVal.min
+        this.max_smell = newVal.max
+      },
+      deep: true
+    }
+  },
+  components: {
+    LeftChart
+  },
+  methods: {
+    handleSelectChange() {
+      this.$emit('select-change', this.value);
+    }
+  }
+})
+</script>
+
+
+<style scoped lang="scss">
+$box-height: 750px;
+$box-width: 100%;
+#right {
+  padding: 20px 16px;
+  height: $box-height;
+  width: $box-width;
+  border-radius: 5px;
+
+  .bg-color-black {
+    height: $box-height - 35px;
+    border-radius: 10px;
+  }
+
+  .top-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .right-title {
+      padding: 0 0 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+      color: green;
+    }
+  }
+
+  .show-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 150px;
+
+    .show-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .show-item-title {
+        height: 40px;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+      }
+
+      .show-item-min-content {
+        font-size: 32px;
+        font-weight: bold;
+        color: #c0dca5;
+      }
+
+      .show-item-max-content {
+        font-size: 32px;
+        font-weight: bold;
+        color: #ea9393;
+      }
+    }
+  }
+}
+</style>

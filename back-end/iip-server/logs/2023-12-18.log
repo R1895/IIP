@@ -1,0 +1,2 @@
+time="2023-12-18 10:21:30" level=info msg="Error 1146 (42S02): Table 'iip.iventory' doesn't exist"
+time="2023-12-18 10:25:12" level=info msg="Key: 'CreateIventoryService.IventoryType' Error:Field validation for 'IventoryType' failed on the 'required' tag"

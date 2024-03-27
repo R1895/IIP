@@ -1,0 +1,186 @@
+{
+  "statusData": [
+    {
+      "worker_name": "汉程通",
+      "status": "故障",
+      "start_time": 32,
+      "machine_id": "C101",
+      "progress": 71.2
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "关机",
+      "start_time": 13,
+      "machine_id": "C102"
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "等待",
+      "start_time": 18,
+      "machine_id": "C103",
+      "progress": 31.38
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 381,
+      "machine_id": "C104",
+      "progress": 50.5
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 132,
+      "machine_id": "C105",
+      "progress": 31.4
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 312,
+      "machine_id": "C106",
+      "progress": 95.3
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 67,
+      "machine_id": "C107",
+      "progress": 38.3
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 584,
+      "machine_id": "C108",
+      "progress": 52.39
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 196,
+      "machine_id": "C109",
+      "progress": 31.93
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 747,
+      "machine_id": "C110",
+      "progress": 50.5
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "故障",
+      "start_time": 182,
+      "machine_id": "C111",
+      "progress": 71.2
+    },
+    {
+      "status": "关机",
+      "machine_id": "C112"
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "等待",
+      "start_time": 82,
+      "machine_id": "C113",
+      "progress": 61.98
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 113,
+      "machine_id": "C114",
+      "progress": 53.5
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 413,
+      "machine_id": "C115",
+      "progress": 99.2
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 271,
+      "machine_id": "C116",
+      "progress": 61.93
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 163,
+      "machine_id": "C117",
+      "progress": 79.92
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 389,
+      "machine_id": "C118",
+      "progress": 72.8
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 291,
+      "machine_id": "C119",
+      "progress": 58.11
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 432,
+      "machine_id": "C120",
+      "progress": 88.5
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 281,
+      "machine_id": "C121",
+      "progress": 29.92
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 298,
+      "machine_id": "C122",
+      "progress": 39.8
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 238,
+      "machine_id": "C123",
+      "progress": 29.83
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 238,
+      "machine_id": "C124",
+      "progress": 51.12
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 381,
+      "machine_id": "C125",
+      "progress": 87.63
+    },
+    {
+      "worker_name": "汉程通",
+      "status": "正常",
+      "start_time": 89,
+      "machine_id": "C126",
+      "progress": 67.86
+    },
+    {
+      "status": "关机",
+      "machine_id": "C127"
+    }
+  ]
+}

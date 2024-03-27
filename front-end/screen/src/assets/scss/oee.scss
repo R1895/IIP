@@ -1,0 +1,50 @@
+#oee {
+  color: #d3d6dd;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left top;
+  overflow: hidden;
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    background-image: url("../../assets/pageBg.png");
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .oee-body {
+    .body-box {
+      margin-top: 16px;
+      display: flex;
+      flex-direction: row;
+
+      //左侧区域的布局
+      .left-box {
+        flex: 1;
+        display: grid;//网格布局可以使datav的组件自适应？？
+      }
+
+      // 右侧
+      .right-box {
+        flex: 1;
+        margin-left: 10px;
+
+        .right-top-box{
+          display: grid;
+          grid-template-columns: repeat(2, 50%);
+        }
+
+        .right-bottom-box{
+            margin-top: 10px;
+        }
+      }
+    }
+  }
+
+}

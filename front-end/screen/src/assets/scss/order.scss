@@ -1,0 +1,150 @@
+.order {
+  color: #d3d6dd;
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left top;
+  overflow: hidden;
+
+  .bg {
+    width: 100%;
+    height: 100%;
+    padding: 16px 16px 0 16px;
+    background-image: url("../../assets/pageBg.png");
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+  .order-container {
+    margin-top: 16px;
+    //display: flex;
+
+
+    .top {
+      width: 100%;
+
+      .order-total {
+        gap: 10px; /* 项之间的间隙 */
+        padding: 10px; /* 可选的内边距 */
+        display: grid;
+        grid-template-columns: repeat(4, 375px); /* 4列 */
+        height: 125px;
+        width: 1600px;
+        margin: 0 auto;
+
+        .order-total-item {
+          width: 375px;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+          .task-name {
+            flex: 1;
+            font-size: 20px;
+            font-weight: bold;
+            align-items: center;
+            display: flex;
+          }
+
+          .task-info {
+            flex: 1;
+            display: flex;
+            font-size: 22px;
+            justify-content: space-between;
+            font-weight: bold;
+            align-items: center;
+
+            .info-label {
+              font-size: 22px;
+              font-weight: bold;
+              align-items: center;
+            }
+          }
+
+        }
+      }
+
+      .placeholder_block {
+        height: 20px;
+      }
+    }
+
+    .table-desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0 10px;
+
+      .table-title {
+        width: 1400px;
+        font-size: 24px;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .table-legend {
+        display: flex;
+        margin-right: 40px;
+
+        .color-info {
+          flex: 1;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .color-block-success {
+            width: 50px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: #f0f9eb;
+          }
+
+          .color-block-warning {
+            width: 50px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: #fffbe6;
+          }
+
+          .color-block-danger {
+            width: 50px;
+            height: 20px;
+            margin-right: 10px;
+            background-color: #f8e5ec;
+          }
+
+          .color-label {
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 5px;
+          }
+        }
+      }
+
+    }
+
+
+    .order-table {
+      margin-top: 20px;
+      width: 100%;
+      height: 630px;
+      overflow: auto; /* 可能需要根据内容多少决定是否显示滚动条 */
+    }
+
+    .block {
+      height: 20px;
+      //margin: 0 20px 20px;
+      display: flex;
+      justify-content: center;
+    }
+  }
+}

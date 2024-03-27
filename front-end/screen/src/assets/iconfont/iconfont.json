@@ -1,0 +1,58 @@
+{
+  "id": "4365900",
+  "name": "iip-smart-sreen",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1286952",
+      "name": "SEN023",
+      "font_class": "sen023",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "11858520",
+      "name": "气体",
+      "font_class": "qiti",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "13638739",
+      "name": "气体",
+      "font_class": "qiti1",
+      "unicode": "e65f",
+      "unicode_decimal": 58975
+    },
+    {
+      "icon_id": "8458759",
+      "name": "UI_icon2_事故1",
+      "font_class": "UI_icon_shigu",
+      "unicode": "e678",
+      "unicode_decimal": 59000
+    },
+    {
+      "icon_id": "14151194",
+      "name": "环境",
+      "font_class": "huanjing",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "18334251",
+      "name": "气体监测",
+      "font_class": "qitijiance",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "37226776",
+      "name": "噪音",
+      "font_class": "zaoyin",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    }
+  ]
+}

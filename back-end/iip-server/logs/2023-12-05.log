@@ -1,0 +1,7 @@
+time="2023-12-05 14:36:12" level=info msg="Key: 'ListWorkshopService.Start' Error:Field validation for 'Start' failed on the 'required' tag"
+time="2023-12-05 14:37:46" level=info msg="Key: 'ListWorkshopService.Start' Error:Field validation for 'Start' failed on the 'required' tag"
+time="2023-12-05 16:05:31" level=info msg="Error 1054 (42S22): Unknown column 'machine' in 'where clause'"
+time="2023-12-05 16:08:23" level=info msg="Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`iip`.`machine`, CONSTRAINT `fk_workshop_machines` FOREIGN KEY (`workshop_id`) REFERENCES `workshop` (`id`))"
+time="2023-12-05 16:08:48" level=info msg="Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`iip`.`machine`, CONSTRAINT `fk_workshop_machines` FOREIGN KEY (`workshop_id`) REFERENCES `workshop` (`id`))"
+time="2023-12-05 16:28:22" level=info msg="Error 1062 (23000): Duplicate entry '1-0' for key 'PRIMARY'"
+time="2023-12-05 17:30:16" level=info msg="Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`iip`.`machine`, CONSTRAINT `fk_workshop_machines` FOREIGN KEY (`workshop_id`) REFERENCES `workshop` (`id`))"

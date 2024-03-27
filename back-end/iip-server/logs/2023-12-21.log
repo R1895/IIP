@@ -1,0 +1,3 @@
+time="2023-12-21 14:50:38" level=info msg="Error 1054 (42S22): Unknown column 'iventorys' in 'where clause'"
+time="2023-12-21 14:50:54" level=info msg="Error 1054 (42S22): Unknown column 'iventorys' in 'where clause'"
+time="2023-12-21 15:40:05" level=info msg="Key: 'ListTaskTypeService.Start' Error:Field validation for 'Start' failed on the 'required' tag"
